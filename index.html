@@ -13,15 +13,15 @@
        }
        var coolQuestion = "On a scale from 1-10 how cool are you, " + name + "?";
        var cool = prompt(coolQuestion);
-       if (cool == "") {
-         x = "Okay if you don't want to play then we don't have to play, " + name ".";
-       }
        if (cool >= "10") {
          x = "Why do you lie to me, " + name + "?";
        } else if (cool >= "6") {
          x = "You're pretty cool, " + name + ". But I think you're probably cooler."
        } else {
          x = "Aw I bet you're more than a " + cool + ", " + name + ". Don't put yourself down.";
+       }
+       if (cool === "") {
+         cool = "0";
        }
        var theHTML = "<h1>" + x + "</h1>";
        $("body").html(theHTML);
