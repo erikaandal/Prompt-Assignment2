@@ -14,11 +14,10 @@
 
        var coolQuestion = "On a scale from 1-10 how cool are you, " + name + "?";
        var cool = prompt(coolQuestion);
-       if (cool == "") {
-         x = "Fine. We don't have to play, " + name + ".";
-       }
        if (cool == "10") {
          x = "Why do you lie to me, " + name + "?";
+       } else if (cool == "") {
+         x = "Fine. We don't have to play, " + name + ".";
        } else if (cool >= "6") {
          x = "You're pretty cool, " + name + ". But I think you're probably cooler.";
        } else {
