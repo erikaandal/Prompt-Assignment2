@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hue so cool</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+
+      var name = prompt("What's you're name?");
+      var coolQuestion = "On a scale from 1-10 how cool are you, " + name + "?";
+      var cool = prompt(coolQuestion);
+      if (cool === "10") {
+        x = "Why do you lie to me, " + name + "?";
+      } else {
+        x = "Aw, I bet you're more than a " + cool + ", " + name + ".";
+      }
+      var theHTML = "<h1>" + x + "</h1>";
+      $("body").html(theHTML);
+
+    });
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
