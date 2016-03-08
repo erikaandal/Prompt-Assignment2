@@ -8,9 +8,10 @@
      $(document).ready(function(){
 
        var name = prompt("What's your name?");
-       if (name == "null") {
+       if (name === "") {
          name = "Shyguy";
        }
+
        var coolQuestion = "On a scale from 1-10 how cool are you, " + name + "?";
        var cool = prompt(coolQuestion);
        if (cool >= "10") {
